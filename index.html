@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Красивая страница</title>
+    <style>
+      :root {
+        --primary: #4f46e5;
+        --secondary: #818cf8;
+        --bg: #f8fafc;
+        --surface: #ffffff;
+        --text: #1e293b;
+        --muted: #64748b;
+      }
+
+      * { box-sizing: border-box; margin: 0; padding: 0; }
+
+      body {
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        background-color: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 16px;
+      }
+
+      header {
+        padding: 40px 0;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 8px;
+        color: var(--text);
+      }
+
+      .subtitle {
+        color: var(--muted);
+        font-size: 1.125rem;
+      }
+
+      main {
+        padding: 32px 0;
+      }
+
+      section {
+        background: var(--surface);
+        border-radius: 12px;
+        padding: 32px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+                    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        margin-bottom: 24px;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        margin-bottom: 16px;
+        color: var(--primary);
+      }
+
+      p {
+        margin-bottom: 12px;
+      }
+
+      ul, ol {
+        margin-left: 20px;
+        margin-bottom: 12px;
+      }
+
+      footer {
+        text-align: center;
+        padding: 40px 0;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      @media (max-width: 600px) {
+        h1 { font-size: 2rem; }
+        section { padding: 20px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Добро пожаловать</h1>
+        <p class="subtitle">Страница с чистым и приятным дизайном</p>
+      </header>
+
+      <main>
+        <section>
+          <h2>О проекте</h2>
+          <p>Это пример аккуратной HTML‑страницы с адаптивной вёрсткой и приятной цветовой палитрой.</p>
+          <p>Она готова к использованию и легко расширяется под ваши задачи.</p>
+        </section>
+
+        <section>
+          <h2>Преимущества</h2>
+          <ul>
+            <li>Адаптивность под мобильные устройства.</li>
+            <li>Чистый код без внешних зависимостей.</li>
+            <li>Приятная типографика и отступы.</li>
+            <li>Современный минималистичный стиль.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Что можно добавить</h2>
+          <ol>
+            <li>Формы обратной связи.</li>
+            <li>Кнопки и карточки товаров.</li>
+            <li>Слайдер или галерею изображений.</li>
+            <li>Интеграцию с API или CMS.</li>
+          </ol>
+        </section>
+      </main>
+
+      <footer>
+        &copy; 2024 Пример страницы. Все права защищены.
+      </footer>
+    </div>
+  </body>
+</html>
